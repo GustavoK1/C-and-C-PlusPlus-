@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+// ValueA is about total, ValueI is about how much you invest, t is about how time it will be invested, tax is about how much % you earn 
+
+    float valueA, valueI, t, fees;
+    int i;
+
+    printf("\n\nHow much do you wanna invest? ");
+    scanf("%f", &valueI);
+    while (valueI <= 0) {
+        printf("Invalid value, : ");
+        scanf("%f", &valueI);
+    }
+
+    printf("\nDigite o tempo: ");
+    scanf("%f", &t);
+
+    printf("\n\n What is the value of fees today: ");
+    scanf("%f", &fees);
+    while (fees <= 0) {
+        printf("Type again the value of fees: ");
+        scanf("%f", &fees);
+    }
+
+    fees = fees / 100;
+
+    valueA = valueI;
+    for (i = 0; i < t; i++) {
+        valueA = valueA * (1 + );
+    }
+
+    printf("\nThe value after %f invested is: %.2f\n", t, valorA);
+
+    return 0;
+}
