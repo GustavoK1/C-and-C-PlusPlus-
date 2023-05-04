@@ -1,10 +1,16 @@
 #include <stdio.h>
+#include<conio.h>
 
 int main() {
 // ValueA is about total, ValueI is about how much you invest, t is about how time it will be invested, tax is about how much % you earn 
 
     float valueA, valueI, t, fees;
     int i;
+    
+    char name[20]; 
+    
+    printf("Hello, what is your first name? ");
+    scanf("%s", name);
 
     printf("\n\nHow much do you wanna invest? ");
     scanf("%f", &valueI);
@@ -13,7 +19,7 @@ int main() {
         scanf("%f", &valueI);
     }
 
-    printf("\nDigite o tempo: ");
+    printf("\nHow much time? (in Years): ");
     scanf("%f", &t);
 
     printf("\n\n What is the value of fees today: ");
@@ -27,10 +33,11 @@ int main() {
 
     valueA = valueI;
     for (i = 0; i < t; i++) {
-        valueA = valueA * (1 + );
+        valueA = valueA * (1 + fees);
     }
 
-    printf("\nThe value after %f invested is: %.2f\n", t, valorA);
+    printf("\n Hi, %s The value after %.0f year(s) invested is: %.2f\n", name, t, valueA);
 
     return 0;
+}
 }
