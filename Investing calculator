@@ -2,7 +2,7 @@
 #include<conio.h>
 
 int main() {
-// ValueA is about total, ValueI is about how much you invest, t is about how time it will be invested, tax is about how much % you earn 
+// ValueA is about total, ValueI is about how much you invest, t is about how time it will be invested, fees is about how much % you earn 
 
     float valueA, valueI, t, fees;
     int i;
