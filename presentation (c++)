@@ -1,0 +1,69 @@
+#include <iostream>
+#include <string>
+#include <cstring>
+
+using namespace std;
+
+class myInfo {
+public:
+	int myNum;
+	int maStatus;
+	int myTell;
+	int myEmail;
+	int myAdress;
+};
+
+
+
+int main() {
+
+	string myFName("Gustavo");
+	string mySName("Henrique");
+	string myMName("Klinger");
+	string myLName("Amadi");
+	int myAge; myAge = 23;
+
+
+	try {
+		string yName;
+		cout << " Type your name:\n" << yName << endl;
+		cin >> yName;
+		cout << "\n Hello " << yName << ".\n" << endl;
+	}
+	catch
+		(int yName) {
+		if (yName = ) {
+		}
+		
+	}
+
+	int num1;
+
+	try {
+		int age;
+		cout << " Send your age to validate your access: \n" << endl;
+		cin >> age;
+		if (age >= 18) {
+			cout << " Access granted - you are old enough.";
+			cout << "\n Presentation text down below. type 1 to see or 0 to don't\n" << endl;
+				cin >> num1;
+				if (num1 == 1) {
+					cout << "\n Hello, my name is " << myFName + " " + mySName + " " + myMName + " " + myLName + ", "
+						"and i have " << myAge << " Years old. " << "I want to tell a story about me! " << "if you want to know, "
+						<< "just stay near and listen to me""."" When i was 12 years old, i look at myself and made a dream for me."
+						<< " I want to be a software developer. \n Since there i'm trying to learn fast than i can to"
+						<< " be a part of this world, and a secret... I will be the best developer ever!!\n\n\n" << endl;
+				}
+
+		}
+		else {
+			throw (age);
+		}
+	}
+	catch (int myNum) {
+		cout << "Access denied - You must be at least 18 years old.\n";
+		cout << "Your age is: " << myNum;
+	}
+
+	return(0);
+}
